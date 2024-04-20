@@ -1,0 +1,89 @@
+*{
+    margin : 0;
+    padding : 0;
+  }
+  
+  
+  html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  body{
+   background-image: url('https://www.shutterstock.com/shutterstock/videos/1015145509/thumb/1.jpg?ip=x480');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .container{
+    display: flex;
+    background-image: url("hacking\ -\ 2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    width: 50%;
+    margin : 2% auto;
+    position : relative;
+  }
+  @media screen and (max-width:600px){
+    .container{
+      flex-direction:column;
+      height: 600px;
+      width: auto;
+      margin: 10px;
+    }
+  }
+  #input{
+    width: 270%;
+    height: 10px;
+    font-size: 15px;
+    margin: 10px;
+    padding: 10px;
+    opacity: 0.8;
+    border-radius: 5px;
+  }
+  
+  .checkBox{
+    color: #07ed07;
+    margin-top: 50px;
+    margin-left: -200px;
+  }
+  .checkbox{
+    margin-right: 5px;
+  }
+  
+  .enter button{
+    margin-top: 70px;
+    margin-left: 260px;
+    height: 30px;
+    width : 80px;
+  }
+  
+  .newContainer{
+    display: none;
+    background-color: black;
+    color: green;
+    height: 60%;
+    width: 80%;
+    position : absolute;
+    top:25%;
+    left: 8%;
+    bottom: 30%;
+    right: 10%;
+    padding: 20px;
+    z-index: 1;
+  }
+  .newContainer button{
+    margin-top: 300px;
+    margin-left: 92%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+  }
+  #btn2{
+    padding: 10px;
+    background-color: #06a206;
+  }

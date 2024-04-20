@@ -1,0 +1,148 @@
+html,body {
+    height: 100vh;
+    width: 100%;
+    place-items:center;
+    display:grid;
+    background-color:black;
+  }
+  *{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+  }
+  .box{
+    width:30%;
+    height:auto;
+    background-color: white;
+    padding:10px;
+    border-radius:5px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+  }
+  .box h2{
+    text-align:center;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    margin: 10px 0;
+    color:#333;
+  }
+  .analog_clock{
+    width:250px;
+    height:250px;
+    background-image:url("clock-removebg-preview.png");
+    background-position:center;
+    background-size:cover;
+    box-shadow:0 0 10px rgba(0,0,0,0.5);
+    border-radius: 100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+  }
+  .analog_clock::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 100%;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+    z-index: 99;
+  }
+  .analog_clock .hour, .minute, .second{
+    position:absolute;
+  }
+  .hour{
+    top:83px;
+  }
+  .hour .hour_hand{
+    width : 5px;
+    height: 40px;
+    background-color:red;
+    transform: rotate(40deg);
+    transform-origin:bottom;
+    border-radius:50%;
+  }
+  
+  .minute{
+    top:53px;
+  }
+  .minute .minute_hand{
+    width : 3.5px;
+    height: 70px;
+    background-color: green;
+    transform: rotate(90deg);
+    transform-origin:bottom;
+    border-radius:50%;
+  }
+  
+  .second{
+    top:30px;
+  }
+  .second .second_hand{
+    width : 2px;
+    height: 90px;
+    background-color: #78d978;
+    transform: rotate(190deg);
+    transform-origin:bottom;
+    border-radius:50%;
+    transition-duration: 100ms;
+  }
+  
+  
+  
+  @media (max-width:768px){
+    .box{
+      width:95%;
+    }
+  }
+  
+  .digital_Clock{
+    margin: 15px 0;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #333;
+  }
+  .alarm_container select{
+    width:30%;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #333;
+    padding: 0 10px;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+  }
+  
+  .alarm_container{
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+  
+  #set_alarm{
+    width: 100%;
+    font-size: 1.5em;
+    padding: 20px 0;
+    border: none;
+    outline: none;
+    background-color: gray;
+    font-family: 'Roboto',sans-serif;
+    border-radius: 5px;
+    transition-duration: 200ms;
+  }
+  
+  #set_alarm:hover{
+    opacity: 0.8;
+  }
+  
+  .disabled{
+    opacity: 0.5;
+  }

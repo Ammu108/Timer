@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake water & Gun</title>
+</head>
+<link rel="stylesheet" href="sswgGame2.css">
+<body>
+    <div class="container">
+        <h1>Snake, Water & Gun</h1>
+    </div>
+    <div class="container">
+        <img src="snake.png" alt="snake" id="snake" class="img">
+        <img src="water.png" alt="water" id="water" class="img">
+        <img src="gun.png" alt="gun" id="gun" class="img">
+
+        <div class="score-board">
+            <div class="score">
+                <p>You have selected :</p>
+                <input type="text" placeholder= " selected option" id="your-input" class="your-input" >
+            </div>
+            <div class="score">
+                <p>computer have selected :</p>
+                <input type="text" placeholder= " Nothing" id="computer-input" class="computer-input" >
+            </div>
+        </div>
+
+        <div class="btn">
+            <button>Go</button>
+        </div>
+
+        <div class="play-again">
+            <button>Play Again</button>
+        </div>
+
+        <div class="result">
+            <div id="draw-game" class="hidden">
+              <p>Oops! This Match Is Draw<br>Please Try again</p>
+            </div>
+            <div id="you-win" class="hidden">
+              <p>Congratulations, You Win This Match</p>
+            </div>
+            <div id="you-loose" class="hidden">
+              <p>Sorry, You Loose This Match</p>
+            </div>
+        </div>
+    </div>
+    <script src="swgGame2.js"></script>
+</body>
+</html>

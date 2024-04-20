@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/705ccea1df.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="musicPlayer.css">
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+         <nav>
+           <div class="circle">
+             <i class="fa-solid fa-chevron-left"></i>
+           </div>
+           <div class="circle">
+             <i class="fa-solid fa-bars"></i>
+            </div>
+         </nav>
+        
+          <div id="audio-content-2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp3276z558YDa7QfmVS2wS5ZRXIYj8DQ5t4Xl4YpSx_w&s" id="song-img-2">
+          <h1 id="audio-content-1-h1">Block</h1>
+          <p id="audio-content-1-p">Dhanda Nyoliwala</p>
+          </div>
+    
+          <div id="audio-panel-1">
+            <audio controls id="audio">
+              <source src="Block  Dhanda Nyoliwala (Music Video)  Deepesh Goyal  VYRL Haryanvi.mp3" type="audio/wav">
+            </audio>
+          </div>
+         
+          <input type="range" value="0" id="progress" step="1" >
+          <div class="dynamicTime">
+            <p id="currentChanger">00:00</p>
+          </div>
+          <div class="timeSpan">
+            <p id="current">00:00</p>
+          </div>
+          <div class="controls">
+            <div>
+              <i class="fa-solid fa-backward" id="backward" ></i>
+            </div>
+            <div>
+              <i class="fa-solid fa-play" id="play-btn" ></i>
+            </div>
+            <div>
+              <i class="fa-solid fa-forward" id="forward" ></i>
+            </div>
+          </div>
+      </div>
+
+
+      <script src="musicPlayer.js"></script>
+</body>
+</html>

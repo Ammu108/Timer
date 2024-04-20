@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* #time{
+    margin-top: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     background-color: aquamarine;
+     flex: 1;
+     flex-wrap: wrap;
+    margin-inline-end: 45%;
+    margin-inline-start: 45%; 
+    padding: 20px;
+    font-size: 1.9rem;
+} */
+
+body {
+    background: black;
+}
+h1{
+    color: white;
+    background: linear-gradient(red,black);
+    top: 30%;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-40%) translateY(-40%);
+
+}
+#time {
+    top: 50%;
+    left: 50%;
+    color:#17D4FE ;
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 60px;
+    font-family: Orbitron;
+    letter-spacing: 7px;
+}
